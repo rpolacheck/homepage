@@ -3,22 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 import { HomepageComponent } from './homepage/homepage.component';
-import { HeaderComponent } from './homepage/header/header.component';
-import { AboutMeComponent } from './homepage/about-me/about-me.component';
-import { ContactComponent } from './homepage/contact/contact.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
-    HeaderComponent,
-    AboutMeComponent,
-    ContactComponent
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
